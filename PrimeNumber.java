@@ -15,25 +15,31 @@ public class PrimeNumber {
 			System.out.println("The number is prime:");
 			
 		}
-			else if(value>2){
-				for (int i=2; i<value/2; i++){
-					if( value %i==0){
-						flag+=1;
-						break;
-					}
-				}
-				if ( flag!=0){
-					System.out.println("The number is not prime:");
-					
-					
-				}else
-				{
-					System.out.println("The number is not valid:");
-					
+		else if(value>2){
+			for (int i=2; i<value/2; i++){
+				if( value %i==0){
+					flag+=1;
+					break;
 				}
 			}
+			if ( flag!=0){
+				System.out.println("The number is not prime:");
+				
+				
+			}else
+			{
+				System.out.println("The number is prime:");
+				
+			}
+			else if (value<0 || value==0){
+				System.out.println("The number is not valid:");
 		}
 	}
+}
+
+
+
+
 	
 	
 
