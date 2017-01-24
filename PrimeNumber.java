@@ -26,16 +26,21 @@ public class PrimeNumber {
 				System.out.println("The number is not prime:");
 				
 				
-			}else
+			}
+			else if (value<0|| value==0){
+				System.out.println("The number is not valid:");
+		}
+			else
 			{
 				System.out.println("The number is prime:");
 				
 			}
-			else if (value<0 || value==0){
-				System.out.println("The number is not valid:");
-		}
+	}
 	}
 }
+
+
+
 
 
 
